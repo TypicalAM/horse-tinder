@@ -1,0 +1,16 @@
+[project]
+name = "horse-tinder"
+version = "0.1.0"
+description = "Tinder, but for horses"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

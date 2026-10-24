@@ -1,0 +1,307 @@
+[
+  {
+    "slug": "biscuit",
+    "name": "Biscuit",
+    "age": 7,
+    "breed": "Pasture enthusiast",
+    "location": "Gehrenberg, Germany",
+    "bio": "Looking for someone who can handle long walks on the hill and longer silences in the field. I will steal your apple.",
+    "interests": [
+      "grazing",
+      "sunsets",
+      "standing very still"
+    ],
+    "pickiness": 0.35,
+    "photo_title": "File:Auf dem Gehrenberg 6.jpg",
+    "photo": "img/biscuit.jpg",
+    "photo_artist": "Dietrich Krieger",
+    "photo_license": "CC BY-SA 3.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Auf_dem_Gehrenberg_6.jpg",
+    "photo_position": "92% center"
+  },
+  {
+    "slug": "pyrene",
+    "name": "Pyrène",
+    "age": 5,
+    "breed": "Mountain mare",
+    "location": "Pyrenees, France",
+    "bio": "Summer in the mountains, winter in the valley. My herd says I'm high maintenance. My herd is wrong.",
+    "interests": [
+      "altitude",
+      "herd drama",
+      "fresh grass"
+    ],
+    "pickiness": 0.5,
+    "photo_title": "File:Chevaux estive Pyrenees.jpg",
+    "photo": "img/pyrene.jpg",
+    "photo_artist": "Myrabella",
+    "photo_license": "CC BY-SA 3.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Chevaux_estive_Pyrenees.jpg"
+  },
+  {
+    "slug": "everest",
+    "name": "Everest",
+    "age": 9,
+    "breed": "Himalayan local",
+    "location": "Suryachaur, Nepal",
+    "bio": "Yes, those are real mountains behind me. No, I will not carry your backpack on the first date.",
+    "interests": [
+      "hiking",
+      "views",
+      "minimal effort"
+    ],
+    "pickiness": 0.6,
+    "photo_title": "File:Domestic horse at Suryachaur and the mountains in the back1.jpg",
+    "photo": "img/everest.jpg",
+    "photo_artist": "Shadow Ayush",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg"
+  },
+  {
+    "slug": "smirky",
+    "name": "Smirky",
+    "age": 4,
+    "breed": "Professional comedian",
+    "location": "Somewhere in Germany",
+    "bio": "This is my serious face. Swipe right if you can make me laugh harder than this.",
+    "interests": [
+      "flehmen response",
+      "stand-up",
+      "smelling things"
+    ],
+    "pickiness": 0.2,
+    "photo_title": "File:Flehmendes Pferd 32 c.jpg",
+    "photo": "img/smirky.jpg",
+    "photo_artist": "Waugsberg",
+    "photo_license": "CC BY-SA 3.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Flehmendes_Pferd_32_c.jpg"
+  },
+  {
+    "slug": "alpine-al",
+    "name": "Alpine Al",
+    "age": 11,
+    "breed": "Tyrolean gentleman",
+    "location": "Galtür, Austria",
+    "bio": "Strong jawline, stronger opinions about hay quality. Ski season is my season.",
+    "interests": [
+      "hay",
+      "snow",
+      "profile pictures"
+    ],
+    "pickiness": 0.55,
+    "photo_title": "File:Galtür - Pferdekopf 01.jpg",
+    "photo": "img/alpine-al.jpg",
+    "photo_artist": "Basotxerri",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Galt%C3%BCr_-_Pferdekopf_01.jpg"
+  },
+  {
+    "slug": "blondie",
+    "name": "Blondie",
+    "age": 1,
+    "breed": "Haflinger",
+    "location": "South Tyrol",
+    "bio": "Natural blonde. Legs still figuring themselves out. Mom says I'm too young for this app.",
+    "interests": [
+      "running in circles",
+      "naps",
+      "mom"
+    ],
+    "pickiness": 0.7,
+    "photo_title": "File:Haflinger Fohlen 01.jpg",
+    "photo": "img/blondie.jpg",
+    "photo_artist": "Böhringer Friedrich",
+    "photo_license": "CC BY-SA 2.5",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Haflinger_Fohlen_01.jpg"
+  },
+  {
+    "slug": "december",
+    "name": "December",
+    "age": 8,
+    "breed": "Winter coat model",
+    "location": "Northern Europe",
+    "bio": "Fluffy for six months of the year. Looking for a cuddle buddy before it gets properly cold.",
+    "interests": [
+      "blankets",
+      "frost",
+      "mysterious stares"
+    ],
+    "pickiness": 0.4,
+    "photo_title": "File:Horse December 2014-1.jpg",
+    "photo": "img/december.jpg",
+    "photo_artist": "Alvesgaspar",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Horse_December_2014-1.jpg"
+  },
+  {
+    "slug": "bjork",
+    "name": "Björk",
+    "age": 6,
+    "breed": "Icelandic horse",
+    "location": "Iceland",
+    "bio": "I have five gaits and you probably have two. Snow doesn't bother me. Bad vibes do.",
+    "interests": [
+      "tölt",
+      "snowstorms",
+      "Icelandic music"
+    ],
+    "pickiness": 0.65,
+    "photo_title": "File:IcelandicHorseInWinter.jpg",
+    "photo": "img/bjork.jpg",
+    "photo_artist": "Andreas Tille",
+    "photo_license": "CC BY-SA 3.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:IcelandicHorseInWinter.jpg"
+  },
+  {
+    "slug": "dawn",
+    "name": "Dawn & Co.",
+    "age": 3,
+    "breed": "New Forest pony",
+    "location": "New Forest, England",
+    "bio": "Early risers. We come as a package deal. Yes, all of us.",
+    "interests": [
+      "sunrises",
+      "group dates",
+      "blocking roads"
+    ],
+    "pickiness": 0.3,
+    "photo_title": "File:NewForestPonies sunrise.jpg",
+    "photo": "img/dawn.jpg",
+    "photo_artist": "Joana Kruse joanaimages.com",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:NewForestPonies_sunrise.jpg"
+  },
+  {
+    "slug": "dolomiti",
+    "name": "Dolomiti",
+    "age": 10,
+    "breed": "Italian alpine",
+    "location": "Tre Cime, Italy",
+    "bio": "Living in a national park, so technically I'm protected. Emotionally, less so.",
+    "interests": [
+      "dolomites",
+      "espresso smells",
+      "long grass"
+    ],
+    "pickiness": 0.45,
+    "photo_title": "File:Parco Naturale Tre Cime horses 3.jpg",
+    "photo": "img/dolomiti.jpg",
+    "photo_artist": "kallerna",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Parco_Naturale_Tre_Cime_horses_3.jpg"
+  },
+  {
+    "slug": "camille",
+    "name": "Camille",
+    "age": 12,
+    "breed": "Camargue",
+    "location": "Camargue, France",
+    "bio": "Born dark, turned white. Very comfortable in wetlands and in difficult conversations.",
+    "interests": [
+      "marshes",
+      "flamingos",
+      "splashing"
+    ],
+    "pickiness": 0.5,
+    "photo_title": "File:Saint-Laurent-d'Aigouze - Camargue horses - 04.jpg",
+    "photo": "img/camille.jpg",
+    "photo_artist": "Benjamin Smith",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Saint-Laurent-d%27Aigouze_-_Camargue_horses_-_04.jpg"
+  },
+  {
+    "slug": "sar",
+    "name": "Šar",
+    "age": 7,
+    "breed": "Wild mountain horse",
+    "location": "Šar Mountains, Balkans",
+    "bio": "Truly free-range. No owner, no saddle, no commitment issues. Well, some commitment issues.",
+    "interests": [
+      "freedom",
+      "ridgelines",
+      "avoiding humans"
+    ],
+    "pickiness": 0.8,
+    "photo_title": "File:Wild horses, Šar Mountains.jpg",
+    "photo": "img/sar.jpg",
+    "photo_artist": "Aljabakphoto",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Wild_horses,_%C5%A0ar_Mountains.jpg"
+  },
+  {
+    "slug": "tripsdrill",
+    "name": "Trips",
+    "age": 5,
+    "breed": "Wild horse",
+    "location": "Tripsdrill, Germany",
+    "bio": "I live next to a theme park, so I've seen things. Looking for someone grounded.",
+    "interests": [
+      "people-watching",
+      "roller coaster screams",
+      "mud"
+    ],
+    "pickiness": 0.4,
+    "photo_title": "File:Wildpferde Tripsdrill.jpg",
+    "photo": "img/tripsdrill.jpg",
+    "photo_artist": "Robin Müller",
+    "photo_license": "CC BY-SA 2.0 de",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Wildpferde_Tripsdrill.jpg"
+  },
+  {
+    "slug": "dulmen",
+    "name": "Dülmen",
+    "age": 4,
+    "breed": "Dülmen wild pony",
+    "location": "Merfelder Bruch, Germany",
+    "bio": "Part of one of the last wild herds in Europe. Rare, like a decent opener on this app.",
+    "interests": [
+      "heathland",
+      "small talk",
+      "being rare"
+    ],
+    "pickiness": 0.55,
+    "photo_title": "File:Dülmen, Merfeld, Dülmener Wildpferde in der Wildbahn -- 2016 -- 4201.jpg",
+    "photo": "img/dulmen.jpg",
+    "photo_artist": "Dietmar Rabich",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Merfeld,_D%C3%BClmener_Wildpferde_in_der_Wildbahn_--_2016_--_4201.jpg"
+  },
+  {
+    "slug": "garrano",
+    "name": "The Garrano Twins",
+    "age": 6,
+    "breed": "Garrano",
+    "location": "Northern Portugal",
+    "bio": "We're not fighting, we're dancing. Mostly. Swipe right if you like a bit of drama.",
+    "interests": [
+      "wrestling",
+      "drama",
+      "mountain shrubs"
+    ],
+    "pickiness": 0.35,
+    "photo_title": "File:Garranos fight.jpg",
+    "photo": "img/garrano.jpg",
+    "photo_artist": "Norberto Esteves",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Garranos_fight.jpg"
+  },
+  {
+    "slug": "duna",
+    "name": "Duna",
+    "age": 9,
+    "breed": "Beach horse",
+    "location": "Jericoacoara, Brazil",
+    "bio": "Sand between my hooves, wind in my mane. If you don't like the beach, keep swiping.",
+    "interests": [
+      "dunes",
+      "ocean breeze",
+      "golden hour"
+    ],
+    "pickiness": 0.6,
+    "photo_title": "File:Cavalos nas dunas de Jericoacora (edited).jpg",
+    "photo": "img/duna.jpg",
+    "photo_artist": "Original: Thiago Gomes Gonçalves Derivative work: Aristeas",
+    "photo_license": "CC BY-SA 4.0",
+    "photo_source": "https://commons.wikimedia.org/wiki/File:Cavalos_nas_dunas_de_Jericoacora_(edited).jpg"
+  }
+]

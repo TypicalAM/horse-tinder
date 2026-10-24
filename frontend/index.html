@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Horse Tinder</title>
+  <meta name="description" content="Swipe right on the horse of your dreams.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐴</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1 class="logo">horse<span>tinder</span></h1>
+      <nav class="tabs" role="tablist">
+        <button class="tab is-active" data-view="discover" role="tab" aria-selected="true">Discover</button>
+        <button class="tab" data-view="matches" role="tab" aria-selected="false">
+          Matches <span class="badge" id="match-count" hidden>0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view" id="view-discover">
+        <div class="deck" id="deck" aria-live="polite"></div>
+        <div class="empty" id="empty" hidden>
+          <div class="empty-icon">🌾</div>
+          <h2>The paddock is empty</h2>
+          <p>You've met every horse in the stable. Start over and give the picky ones another chance.</p>
+          <button class="pill" id="reset">Start over</button>
+        </div>
+        <div class="actions" id="actions">
+          <button class="action nope" id="btn-nope" aria-label="Pass">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+          <button class="action like" id="btn-like" aria-label="Like">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+          </button>
+        </div>
+        <p class="hint">Drag the card, or use ← and → keys</p>
+      </section>
+
+      <section class="view" id="view-matches" hidden>
+        <div class="match-list" id="match-list"></div>
+        <div class="empty" id="matches-empty" hidden>
+          <div class="empty-icon">🐎</div>
+          <h2>No matches yet</h2>
+          <p>Horses are picky. Keep swiping.</p>
+        </div>
+      </section>
+
+      <section class="view chat" id="view-chat" hidden>
+        <header class="chat-head">
+          <button class="back" id="chat-back" aria-label="Back to matches">←</button>
+          <img id="chat-avatar" alt="">
+          <div>
+            <div class="chat-name" id="chat-name"></div>
+            <div class="chat-sub" id="chat-sub"></div>
+          </div>
+        </header>
+        <ol class="messages" id="messages"></ol>
+        <form class="composer" id="composer">
+          <input id="composer-input" maxlength="500" autocomplete="off" placeholder="Say something charming…" required>
+          <button class="pill" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="match-modal" hidden>
+    <div class="modal-card">
+      <p class="modal-kicker">It's a</p>
+      <h2 class="modal-title">Mane Match!</h2>
+      <img class="modal-photo" id="modal-photo" alt="">
+      <p class="modal-text" id="modal-text"></p>
+      <div class="modal-buttons">
+        <button class="pill" id="modal-chat">Send a message</button>
+        <button class="pill ghost" id="modal-close">Keep swiping</button>
+      </div>
+    </div>
+  </div>
+
+  <template id="card-template">
+    <article class="card">
+      <img class="card-photo" draggable="false" alt="">
+      <div class="stamp stamp-like">NEIGH</div>
+      <div class="stamp stamp-nope">NAY</div>
+      <div class="card-info">
+        <h2><span class="card-name"></span> <span class="card-age"></span></h2>
+        <p class="card-meta"></p>
+        <p class="card-bio"></p>
+        <ul class="card-tags"></ul>
+        <a class="card-credit" target="_blank" rel="noopener"></a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
