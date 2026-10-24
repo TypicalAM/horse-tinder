@@ -29,6 +29,38 @@ ruff check . && ruff format --check .
 nix flake check              # everything CI runs
 ```
 
+## Dependency updates (Renovate)
+
+`renovate.json` makes Renovate open PRs for:
+
+- `flake.lock`: the `nixpkgs` input, plus weekly lock file maintenance
+- GitHub Actions in `.github/workflows/`, kept pinned to commit SHAs
+- the `ubuntu-24.04` runner image
+- the Nix version CI installs (`releases.nixos.org/nix/nix-X.Y.Z/install`)
+
+New versions must be at least a day old (`minimumReleaseAge`) before Renovate proposes them.
+
+### Self-hosting
+
+`nix run .#renovate` runs Renovate pinned by `flake.lock`, with `nix` and `git` on its
+`PATH`, using the global config in `renovate/global.json` (GitHub, only repos that have
+a `renovate.json`).
+
+```sh
+# try the config locally, no token, no branches: just lists the updates it would make
+nix run .#renovate -- --platform=local
+
+# real run: needs a GitHub token that can push branches and open PRs
+export RENOVATE_TOKEN=github_pat_...
+nix run .#renovate -- OWNER/horse-tinder
+
+# validate the config files
+nix shell --inputs-from . nixpkgs#renovate -c renovate-config-validator renovate.json
+```
+
+Another forge works too, e.g. `RENOVATE_PLATFORM=forgejo RENOVATE_ENDPOINT=https://git.example.com`. Point `RENOVATE_CONFIG_FILE` at your own file to replace the global config.
+To run it regularly, put the same command in a systemd timer or cron job.
+
 ## API
 
 Users are anonymous and identified by an `ht_session` cookie issued on first request.

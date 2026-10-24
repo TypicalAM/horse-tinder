@@ -40,6 +40,21 @@
             exec python -m horse_tinder.app "$@"
           '';
         };
+
+        # Self-hosted Renovate. The nix manager shells out to `nix` and `git`,
+        # so both are pinned here alongside Renovate itself.
+        renovate = pkgs.writeShellApplication {
+          name = "renovate-self-hosted";
+          runtimeInputs = [
+            pkgs.renovate
+            pkgs.nix
+            pkgs.git
+          ];
+          text = ''
+            export RENOVATE_CONFIG_FILE="''${RENOVATE_CONFIG_FILE:-${./renovate/global.json}}"
+            exec renovate "$@"
+          '';
+        };
       });
 
       apps = forAllSystems (pkgs: {
@@ -47,6 +62,12 @@
           type = "app";
           program = "${self.packages.${pkgs.system}.default}/bin/horse-tinder";
           meta.description = "Run the Horse Tinder server";
+        };
+
+        renovate = {
+          type = "app";
+          program = "${self.packages.${pkgs.system}.renovate}/bin/renovate-self-hosted";
+          meta.description = "Run self-hosted Renovate with this repo's global config";
         };
       });
 

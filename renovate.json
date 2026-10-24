@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
+  "minimumReleaseAge": "1 day",
+  "nix": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Nix version installed by CI",
+      "managerFilePatterns": ["/^\\.github/workflows/.+\\.ya?ml$/"],
+      "matchStrings": [
+        "https://releases\\.nixos\\.org/nix/nix-(?<currentValue>\\d+\\.\\d+\\.\\d+)/install"
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "NixOS/nix"
+    }
+  ]
+}
