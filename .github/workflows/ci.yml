@@ -21,7 +21,7 @@ jobs:
         with:
           # Pinned Nix version. nixpkgs itself (Python, FastAPI, ruff, pytest, ...)
           # is pinned by flake.lock.
-          install_url: https://releases.nixos.org/nix/nix-2.34.7/install
+          install_url: https://releases.nixos.org/nix/nix-2.35.4/install
 
       - name: Lint, test and build (nix flake check)
         run: nix flake check --no-update-lock-file --print-build-logs
